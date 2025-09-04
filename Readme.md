@@ -26,8 +26,8 @@ A simple Express.js REST API for managing items, using PostgreSQL and Docker.
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/docker-componse-project.git
-   cd docker-componse-project
+   git clone https://github.com/neerajtrianz/docker-build-learn.git
+   cd docker-build-learn
    ```
 
 2. **Install dependencies:**
@@ -52,12 +52,12 @@ A simple Express.js REST API for managing items, using PostgreSQL and Docker.
 
 1. **Build the Docker image:**
    ```sh
-   docker build -t docker-componse-project .
+   docker build -t docker-compose-project .
    ```
 
 2. **Run the container:**
    ```sh
-   docker run --env-file .env -p 3000:3000 docker-componse-project
+   docker run --env-file .env -p 3000:3000 docker-compose-project
    ```
 
    - Make sure your `.env` file is present and contains the required variables.
