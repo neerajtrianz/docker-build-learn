@@ -18,15 +18,6 @@ app.get("/health", async (_req, res) => {
   }
 });
 
-// CRUD: items
-// Table schema (run on Neon once): 
-// CREATE TABLE IF NOT EXISTS items (
-//   id SERIAL PRIMARY KEY,
-//   name TEXT NOT NULL,
-//   done BOOLEAN NOT NULL DEFAULT false,
-//   created_at TIMESTAMPTZ DEFAULT now()
-// );
-
 app.get("/items", async (_req, res) => {
   try {
     const { rows } = await pool.query("SELECT * FROM items ORDER BY id DESC");
